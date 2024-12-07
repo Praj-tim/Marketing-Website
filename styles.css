@@ -1,13 +1,14 @@
 /* Root variables */
 :root {
-    --primary-color: #2563eb;
-    --secondary-color: #3498db;
-    --accent-color: #4f46e5;
-    --text-primary: #1a1a1a;
-    --text-secondary: #4a5568;
-    --bg-light: #f8fafc;
+    --bg-alabaster: #EDEADE;
     --bg-white: #ffffff;
+    --text-primary: #2C3E50;
+    --text-secondary: #34495E;
+    --primary-color: #2C3E50;
+    --accent-color: #34495E;
     --card-bg: #ffffff;
+    --nav-bg: rgba(255, 255, 255, 0.95);
+    --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
 /* Global Styles */
@@ -18,10 +19,10 @@
 }
 
 body {
+    background-color: var(--bg-alabaster);
+    color: var(--text-primary);
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
-    color: var(--text-primary);
-    background: var(--bg-light);
 }
 
 /* Container */
@@ -33,8 +34,8 @@ body {
 
 /* Navigation */
 nav {
-    background: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: var(--nav-bg);
+    box-shadow: 0 2px 10px var(--shadow-color);
     position: fixed;
     width: 100%;
     top: 0;
@@ -104,7 +105,7 @@ nav .container {
 .services-section {
     padding: 8rem 0;
     position: relative;
-    background: var(--bg-white);
+    background: var(--bg-alabaster);
 }
 
 .section-header {
@@ -116,6 +117,7 @@ nav .container {
     font-size: 3rem;
     color: var(--text-primary);
     margin-bottom: 1rem;
+    font-weight: 600;
 }
 
 .section-header .subtitle {
@@ -125,20 +127,22 @@ nav .container {
     margin: 0 auto;
 }
 
+/* Services Grid */
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2.5rem;
-    padding: 2rem 0;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
 }
 
 .service-card {
-    background: var(--card-bg);
-    padding: 2.5rem;
+    background: var(--bg-white);
+    padding: 2rem;
     border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    text-align: center;
     transition: all 0.3s ease;
-    height: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    color: var(--text-primary);
 }
 
 .service-card:hover {
@@ -163,11 +167,23 @@ nav .container {
     line-height: 1.7;
 }
 
+@media (max-width: 1200px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* About Section */
 .about {
     padding: 8rem 0;
     position: relative;
-    background: var(--bg-light);
+    background: var(--bg-alabaster);
 }
 
 .about-content {
@@ -180,7 +196,7 @@ nav .container {
 .expect-section {
     padding: 8rem 0;
     position: relative;
-    background: var(--bg-white);
+    background: var(--bg-alabaster);
 }
 
 .expect-cards {
@@ -191,7 +207,7 @@ nav .container {
 }
 
 .expect-card {
-    background: var(--card-bg);
+    background: var(--bg-white);
     padding: 2.5rem;
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
@@ -225,7 +241,7 @@ nav .container {
 /* Buttons */
 .cta-button {
     background: var(--primary-color);
-    color: white;
+    color: var(--bg-white);
     padding: 1.2rem 2.5rem;
     border: none;
     border-radius: 8px;
@@ -247,7 +263,7 @@ nav .container {
     right: 2rem;
     padding: 1rem 2rem;
     background: var(--primary-color);
-    color: white;
+    color: var(--bg-white);
     border: none;
     border-radius: 8px;
     font-weight: 600;
@@ -278,7 +294,7 @@ nav .container {
 }
 
 .contact-popup-content {
-    background: white;
+    background: var(--bg-white);
     padding: 3rem;
     border-radius: 15px;
     width: 90%;
@@ -319,10 +335,12 @@ nav .container {
 .form-group textarea {
     width: 100%;
     padding: 0.8rem;
-    border: 1px solid #e2e8f0;
+    border: 1px solid var(--text-secondary);
     border-radius: 8px;
     font-size: 1rem;
     transition: all 0.3s ease;
+    background: var(--bg-white);
+    color: var(--text-primary);
 }
 
 .form-group input:focus,
@@ -383,7 +401,7 @@ nav .container {
 .case-studies-section,
 .blog-posts-section {
     padding: 8rem 0;
-    background: var(--bg-white);
+    background: var(--bg-alabaster);
 }
 
 .case-studies-grid,
@@ -396,7 +414,7 @@ nav .container {
 
 .case-study-card,
 .blog-post-card {
-    background: var(--card-bg);
+    background: var(--bg-white);
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
@@ -423,6 +441,7 @@ nav .container {
 
 .card-content {
     padding: 2rem;
+    background: var(--bg-white);
 }
 
 .card-content h3 {
@@ -446,7 +465,7 @@ nav .container {
 
 .read-more-btn {
     background: var(--primary-color);
-    color: white;
+    color: var(--bg-white);
     padding: 0.8rem 1.5rem;
     border: none;
     border-radius: 8px;
@@ -465,7 +484,7 @@ nav .container {
 .newsletter-section {
     background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
     padding: 5rem 0;
-    color: white;
+    color: var(--bg-white);
 }
 
 .newsletter-form {
@@ -488,7 +507,7 @@ nav .container {
 }
 
 .newsletter-submit {
-    background: white;
+    background: var(--bg-white);
     color: var(--primary-color);
     padding: 1rem 2rem;
     border: none;
@@ -546,4 +565,165 @@ nav .container {
 .nav-links a.active {
     color: var(--primary-color);
     font-weight: 600;
+}
+
+/* Parallax Backgrounds */
+.parallax-bg .bg-overlay {
+    background: rgba(44, 62, 80, 0.7); /* Darker overlay for better contrast */
+}
+
+/* Contact Page Styles */
+.contact-hero {
+    background-color: var(--bg-alabaster);
+    padding: 120px 0 60px;
+    text-align: center;
+}
+
+.contact-hero h1 {
+    font-size: 3rem;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.contact-hero p {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    padding: 60px 0;
+    background-color: var(--bg-white);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-card {
+    background: var(--bg-alabaster);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card .icon {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.contact-card h3 {
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.contact-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.contact-form-section {
+    padding: 60px 0;
+    background-color: var(--bg-alabaster);
+}
+
+.form-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--bg-white);
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.form-wrapper h2 {
+    text-align: center;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: var(--bg-white);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(44, 62, 80, 0.1);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-wrapper {
+        padding: 2rem;
+        margin: 0 1rem;
+    }
+
+    .contact-hero h1 {
+        font-size: 2.5rem;
+    }
 }

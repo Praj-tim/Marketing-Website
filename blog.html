@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Case Studies & Blog - Modern Marketing Website</title>
+    <title>Blog - Modern Marketing Website</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -15,95 +15,14 @@
         <div class="container">
             <div class="logo"><a href="/">YourBrand</a></div>
             <ul class="nav-links">
-                <li><a href="index.html#home">Home</a></li>
-                <li><a href="index.html#services">Services</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li class="dropdown">
-                    <a href="#case-studies" class="active">Case Studies</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#case-studies">Case Studies</a></li>
-                        <li><a href="#blog-posts">Blog Posts</a></li>
-                    </ul>
-                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="case-studies.html">Case Studies</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="index.html#expect">What to Expect</a></li>
             </ul>
         </div>
     </nav>
-
-    <!-- Case Studies Section -->
-    <section id="case-studies" class="case-studies-section">
-        <div class="section-content container">
-            <div class="section-header" data-aos="fade-up">
-                <h2>CASE STUDIES</h2>
-                <p class="subtitle">Real success stories from our clients</p>
-            </div>
-            
-            <div class="case-studies-grid">
-                <div class="case-study-card hover-lift" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Financial Services Case Study">
-                    </div>
-                    <div class="card-content">
-                        <h3>Digital Transformation for Financial Services</h3>
-                        <p>How we helped a leading financial institution increase their social media engagement by 300% and generate 2x more qualified leads through strategic content distribution.</p>
-                        <button class="read-more-btn hover-effect">Read Full Case Study</button>
-                    </div>
-                </div>
-
-                <div class="case-study-card hover-lift" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Tech Success Story">
-                    </div>
-                    <div class="card-content">
-                        <h3>Content Strategy Success in Tech</h3>
-                        <p>A comprehensive analysis of how our content flywheel approach transformed a tech startup's market presence, resulting in 5x growth in organic reach.</p>
-                        <button class="read-more-btn hover-effect">Read Full Case Study</button>
-                    </div>
-                </div>
-
-                <div class="case-study-card hover-lift" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Retail Brand Awareness">
-                    </div>
-                    <div class="card-content">
-                        <h3>Boosting Brand Awareness in Retail</h3>
-                        <p>Learn how we helped a retail chain achieve 150% increase in brand recognition through targeted social media campaigns and influencer partnerships.</p>
-                        <button class="read-more-btn hover-effect">Read Full Case Study</button>
-                    </div>
-                </div>
-
-                <div class="case-study-card hover-lift" data-aos="fade-up" data-aos-delay="400">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="SaaS Strategy">
-                    </div>
-                    <div class="card-content">
-                        <h3>Revamping Online Strategies for SaaS</h3>
-                        <p>Discover how our strategic approach helped a SaaS company double their conversion rate and reduce customer acquisition costs by 40%.</p>
-                        <button class="read-more-btn hover-effect">Read Full Case Study</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter Section -->
-    <section id="newsletter" class="newsletter-section">
-        <div class="section-content container">
-            <div class="section-header" data-aos="fade-up">
-                <h2>JOIN THE NEWSLETTER</h2>
-                <p class="subtitle">Get weekly marketing insights delivered straight to your inbox</p>
-            </div>
-            
-            <form id="newsletterForm" class="newsletter-form" data-aos="fade-up" data-aos-delay="200">
-                <div class="form-row">
-                    <input type="text" id="newsletter-name" name="fullname" placeholder="Full Name" required>
-                    <input type="email" id="newsletter-email" name="email" placeholder="Email Address" required>
-                    <button type="submit" class="newsletter-submit hover-effect">Subscribe</button>
-                </div>
-            </form>
-        </div>
-    </section>
 
     <!-- Blog Posts Section -->
     <section id="blog-posts" class="blog-posts-section">
@@ -150,6 +69,24 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="newsletter-section">
+        <div class="section-content container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>JOIN THE NEWSLETTER</h2>
+                <p class="subtitle">Get weekly marketing insights delivered straight to your inbox</p>
+            </div>
+            
+            <form id="newsletterForm" class="newsletter-form" data-aos="fade-up" data-aos-delay="200">
+                <div class="form-row">
+                    <input type="text" id="newsletter-name" name="fullname" placeholder="Full Name" required>
+                    <input type="email" id="newsletter-email" name="email" placeholder="Email Address" required>
+                    <button type="submit" class="newsletter-submit hover-effect">Subscribe</button>
+                </div>
+            </form>
         </div>
     </section>
 
