@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Studies & Blog - Modern Marketing Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo"><a href="/">YourBrand</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li class="dropdown">
+                    <a href="#case-studies">Case Studies</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#case-studies">Case Studies</a></li>
+                        <li><a href="#blog-posts">Blog Posts</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html#expect">What to Expect</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Case Studies Section -->
+    <section id="case-studies" class="case-studies-section">
+        <div class="section-content container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>CASE STUDIES</h2>
+                <p class="subtitle">Real success stories from our clients</p>
+            </div>
+            
+            <div class="case-studies-grid">
+                <div class="case-study-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Digital Transformation for Financial Services</h3>
+                    <p>How we helped a leading financial institution increase their social media engagement by 300% and generate 2x more qualified leads through strategic content distribution.</p>
+                    <button class="read-more-btn">Read Full Case Study</button>
+                </div>
+
+                <div class="case-study-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Content Strategy Success in Tech</h3>
+                    <p>A comprehensive analysis of how our content flywheel approach transformed a tech startup's market presence, resulting in 5x growth in organic reach.</p>
+                    <button class="read-more-btn">Read Full Case Study</button>
+                </div>
+
+                <div class="case-study-card" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Boosting Brand Awareness in Retail</h3>
+                    <p>Learn how we helped a retail chain achieve 150% increase in brand recognition through targeted social media campaigns and influencer partnerships.</p>
+                    <button class="read-more-btn">Read Full Case Study</button>
+                </div>
+
+                <div class="case-study-card" data-aos="fade-up" data-aos-delay="400">
+                    <h3>Revamping Online Strategies for SaaS</h3>
+                    <p>Discover how our strategic approach helped a SaaS company double their conversion rate and reduce customer acquisition costs by 40%.</p>
+                    <button class="read-more-btn">Read Full Case Study</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup Section -->
+    <section id="newsletter" class="newsletter-section">
+        <div class="section-content container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>JOIN THE BADMASH NEWSLETTER</h2>
+                <p class="subtitle">Get weekly marketing insights delivered straight to your inbox</p>
+            </div>
+            
+            <form id="newsletterForm" class="newsletter-form" data-aos="fade-up" data-aos-delay="200">
+                <div class="form-row">
+                    <input type="text" id="newsletter-name" name="fullname" placeholder="Full Name" required>
+                    <input type="email" id="newsletter-email" name="email" placeholder="Email Address" required>
+                    <button type="submit" class="newsletter-submit">Subscribe</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Blog Posts Section -->
+    <section id="blog-posts" class="blog-posts-section">
+        <div class="section-content container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>BLOG POSTS</h2>
+                <p class="subtitle">Latest insights and industry trends</p>
+            </div>
+            
+            <div class="blog-posts-grid">
+                <div class="blog-post-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="post-date">November 29, 2024</div>
+                    <h3>The Ultimate YouTube Studio Setup</h3>
+                    <p>Discover how to set up the perfect YouTube studio for content creation, including equipment recommendations and space optimization tips.</p>
+                    <button class="read-more-btn">Read More</button>
+                </div>
+
+                <div class="blog-post-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="post-date">November 25, 2024</div>
+                    <h3>Mastering Social Media Analytics</h3>
+                    <p>Learn how to leverage data analytics to improve your social media strategy and drive better engagement with your target audience.</p>
+                    <button class="read-more-btn">Read More</button>
+                </div>
+
+                <div class="blog-post-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="post-date">November 20, 2024</div>
+                    <h3>Content Distribution Strategies for 2025</h3>
+                    <p>Stay ahead of the curve with our comprehensive guide to content distribution strategies for the upcoming year.</p>
+                    <button class="read-more-btn">Read More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Popup -->
+    <div class="contact-popup">
+        <div class="contact-popup-content">
+            <button class="close-popup" aria-label="Close form">×</button>
+            <h2>Get in Touch</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="e.g. Robert Mayar" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="e.g. robertmayar@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="company">Company</label>
+                    <input type="text" id="company" name="company" placeholder="e.g. Nike" required>
+                </div>
+                <div class="form-group">
+                    <label for="help">How can we help?</label>
+                    <select id="help" name="help" required>
+                        <option value="" disabled selected>Select one...</option>
+                        <option value="work">Work with us</option>
+                        <option value="learn">Learn more</option>
+                        <option value="chat">Let's chat</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" placeholder="Describe your project to us" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 50
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
+

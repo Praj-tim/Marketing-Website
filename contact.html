@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Modern Marketing Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo"><a href="/">YourBrand</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li class="dropdown">
+                    <a href="blog.html">Case Studies</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="blog.html#case-studies">Case Studies</a></li>
+                        <li><a href="blog.html#blog-posts">Blog Posts</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html#expect">What to Expect</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <section id="contact-hero" class="contact-hero">
+        <div class="parallax-bg rellax" data-rellax-speed="-4">
+            <div class="bg-overlay"></div>
+        </div>
+        <div class="section-content container">
+            <h1 data-aos="fade-up" data-aos-duration="1000">Get in Touch</h1>
+            <p data-aos="fade-up" data-aos-delay="200">Let's discuss how we can help transform your business</p>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="contact-info">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon hover-scale">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Visit Us</h3>
+                    <p>123 Marketing Street<br>Digital City, DC 12345</p>
+                </div>
+
+                <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon hover-scale">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>+1 (555) 123-4567<br>Mon-Fri, 9am-6pm</p>
+                </div>
+
+                <div class="contact-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icon hover-scale">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>info@yourbrand.com<br>support@yourbrand.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="form-wrapper" data-aos="fade-up" data-aos-delay="100">
+                <h2>Send Us a Message</h2>
+                <form id="contactPageForm" class="contact-page-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="e.g. Robert Mayar" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="e.g. robertmayar@gmail.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="e.g. +1 (555) 123-4567">
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company" placeholder="e.g. Nike" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your project..." rows="6" required></textarea>
+                        </div>
+                        <div class="form-group full-width">
+                            <button type="submit" class="submit-btn hover-effect">Send Message</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section" data-aos="fade-up">
+        <div class="container">
+            <div class="map-wrapper">
+                <!-- Replace with your actual map embed code -->
+                <div class="map-placeholder">
+                    <p>Map will be displayed here</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 50
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html> 
+</html> 
